@@ -19,6 +19,5 @@ var body = document.querySelector('body'),
   } else {
     bar.className += " done";
     location.href = './name.html';
-
   }
 })();

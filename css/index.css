@@ -1,5 +1,5 @@
 body {   
-    background-image: url(/pictures/bg-game)!important;
+    background-image: url(/pictures/tomb.png)!important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -20,50 +20,7 @@ body {
     border-color: black;
     font-size: 4em;
   }
-  .can1{
-    position: relative;
-    width: 10%;
-    height: 12%;
-    left: 7%;
-    top: 95%;
-    z-index: 1;
-}
-.can2{
-    position: relative;
-    width: 10%;
-    height: 10%;
-    left: 46%;
-    z-index: 1;
-    top: 60%;
-}
-.can3{
-    position: relative;
-    width: 5%;
-    height: 5%;
-    left: 53%;
-    z-index: 1;
-    top: 10%;
-}
-.can4{
-    position: relative;
-    width: 7%;
-    height: 7%;
-    left: 57%;
-    z-index: 1;
-    top: 11%;
-}
-.flower1{
-    position: relative;
-    width: 10%;
-    height: 10%;
-    left: 50%;
-    z-index: 1;
-}
-.flower2{
-    position: relative;
-    width: 10%;
-    height: 10%;
-    left: 50%;
-    z-index: 1;
-}
-
+  .time{
+    font-size: 2rem;
+    margin-left: 100px;
+  }
