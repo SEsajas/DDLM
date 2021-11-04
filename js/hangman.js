@@ -107,7 +107,6 @@ var programming_languages = [
      if (wordStatus === answer1) {
    
        document.getElementById('keyboard').innerHTML = 'You Won!!!';
-       document.querySelector('.hidden').classList.toggle('hidden');
        document.querySelector('button').classList.toggle('hidden');
        answer1 = true;
        answers[2] = answer1;
@@ -149,7 +148,7 @@ var programming_languages = [
    
      guessed = [];
    
-     document.getElementById('hangmanPic').src = '/[ictures/hangman/0.png';
+     document.getElementById('hangmanPic').src = '/pictures/hangman/0.png';
    
      randomWord();
    

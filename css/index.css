@@ -24,3 +24,73 @@ body {
     font-size: 2rem;
     margin-left: 100px;
   }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 1px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .spider{
+    position: relative;
+    width: 10%;
+    height: 30%;
+    bottom: 26%;
+    left: 40%; 
+}
+.web{
+    position: relative;
+    width: 20%;
+    height: 40%;
+    bottom: 15%;
+    left: 69%; 
+}
+.game1{
+    position: relative;
+    width: 1%;
+    height: 5%;
+    top: 49%;
+    left: 12%;
+    z-index: 2;
+}
+.game2{
+    position: relative;
+    width: 3%;
+    height: 7%;
+    top: 35%;
+    left: 43%; 
+}
+.flower{
+    position: relative;
+    width: 16%;
+    height: 7%;
+    top: 60%;
+    left: 6%;
+}
+.alter{
+    position: relative;
+    width: 13%;
+    height: 30%;
+    top: 46%;
+    right: 9%;
+}
+.lady{
+    position: relative;
+    width: 10%;
+    height: 40%;
+    top: 60%;
+    right: 30%;  
+}
+.game3{
+    position: relative;
+    width: 10%;
+    height: 40%;
+    top: 60%;
+    right: 14%;  
+}
