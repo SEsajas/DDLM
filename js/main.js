@@ -1,4 +1,11 @@
 // localStorage.clear();
+let answer = false
+let answers = getSaved();
+
+if(!answers){
+    answers = [];
+}
+
 let countDown = 20;
 let countDownTimer;
 function updateCountDown(){
@@ -66,23 +73,3 @@ function getSaved(){
     return JSON.parse(localStorage.getItem("answers"));
 }
 
-// Check name 
-
-let buttonName = document.querySelector(".nameSet");
-let nameInput = document.querySelector("#input_name");
-
-if (nameInput) {
-    buttonName.addEventListener("click",()=>{
-        console.log("1");
-        let name = nameInput.value;
-        if(name == "")
-        {
-            alert (`You did not enter a name`)
-        }else{
-            localStorage.setItem("name",name);
-            location.href = './start.html';
-        }
-    })
-    
-    
-}

@@ -3,7 +3,7 @@ var body = document.querySelector('body'),
     bar = document.querySelector('.progress-bar'),
     counter = document.querySelector('.count'),
     i = 0,
-    throttle = 0.7; // 0-1
+    throttle = 0.8; // 0-1
 
 (function draw() {
   if(i <= 100) {
