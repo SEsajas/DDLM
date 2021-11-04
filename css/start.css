@@ -1,0 +1,11 @@
+body {   
+    background-image: url(/pictures/bg-story.jpg)!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.jumbotron{
+    background-color: black !important;
+    background-size: cover;
+    text-align: center;
+} 
