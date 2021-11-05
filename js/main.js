@@ -1,4 +1,6 @@
- localStorage.clear();
+//localStorage.clear();
+
+
 let answer = false;
 let answers = getSaved();
 
@@ -32,28 +34,20 @@ if (hang_game)
 }
 
 const time = document.querySelector(".time");
-const overlay = document.querySelector(".overlay");
-let countDown = 1200;
+let countDown = 600;
 let countDownTimer;
+setTimeout(stopGame, countDown * 1000);
 countDownTimer = setInterval(updateCountDown, 1000);
 
-function startGame(){
-    overlay.classList.toggle("hidden");
-    setTimeout(stopGame, countDown * 1000);
-    countDownTimer = setInterval(updateCountDown, 1000);
-}
 
 // Game Over
 
 function stopGame(){
-    alert("Your time is up");
-        clearInterval(spawnTimer);
-        overlay.classList.toggle("hidden");
+    alert("Your time is up")
         clearInterval(countDownTimer);
         countDown = 10;
         location.href = './lose.html';
     }
-
 
 function updateCountDown(){
     countDown --;
@@ -63,14 +57,16 @@ function updateCountDown(){
 
 
 // To clean local storage to replay the game
-let buttonReplay = document.querySelectorAll(".replay");
+// let buttonReplay = document.querySelectorAll(".replay");
 
-if (buttonReplay) {
+// if (buttonReplay) {
 
-    buttonReplay.addEventListener("click",()=>{
-        localStorage.clear();
-    })
-};
+//     buttonReplay.addEventListener("click",()=>{
+//         localStorage.removeItem(`answers`);
+//         localStorage.removeItem(`name`);
+//         localStorage.removeItem(`characher`);
+//     })
+// };
 
 
 

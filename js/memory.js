@@ -62,11 +62,13 @@ class MixOrMatch {
         this.hideCards();
         this.ticker.innerText = this.totalClicks;
     }
+
     gameOver() {
         clearInterval(this.countdown);
         this.audioController.gameOver();
         document.getElementById('game-over-text').classList.add('visible');
     }
+
     victory() {
         clearInterval(this.countdown);
         this.audioController.victory();
@@ -83,6 +85,7 @@ class MixOrMatch {
             card.classList.remove('matched');
         });
     }
+    
     flipCard(card) {
         if(this.canFlipCard(card)) {
             this.audioController.flip();

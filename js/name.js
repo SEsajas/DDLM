@@ -38,7 +38,6 @@ characters.forEach(element => {
 
     button.addEventListener("click", function(){
         setCharacter(currentI); //// saved the character index to local storage
-        document.querySelector(".character-select-text").textContent = `current character: Character ${currentI}` /// change the text for user experiance
     })
     Index++;
 });

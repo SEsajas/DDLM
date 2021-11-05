@@ -2,6 +2,7 @@
     display: none;
 }
 body {
+    
     background-image: url('/pictures/hangman/hangmanbg.png');
     background-size: cover;
     color: white;
@@ -9,4 +10,4 @@ body {
                   1px 1px 0 #000,
                  1px -1px 0 #000,
                 -1px -1px 0 #000;
-   }
+}
