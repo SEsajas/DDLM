@@ -189,3 +189,24 @@ function exit(){
   }
   }
   
+  // Timer
+const time = document.querySelector(".time");
+let countDown = localStorage.getItem("time") || localStorage.setItem("time", 600);
+let countDownTimer;
+setTimeout(stopGame, countDown * 1000);
+countDownTimer = setInterval(updateCountDown, 1000);
+time.textContent = countDown;
+
+function stopGame(){
+    alert("Your time is up")
+        clearInterval(countDownTimer);
+        countDown = 10;
+        location.href = './lose.html';
+    }
+
+function updateCountDown(){
+    countDown --;
+    localStorage.setItem("time", countDown)
+    console.log(countDown);
+    time.textContent = countDown;
+}

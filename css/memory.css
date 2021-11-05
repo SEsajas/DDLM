@@ -197,3 +197,8 @@ body {
     align-items: center;
   }
 }
+.time{
+  position: absolute;
+  font-size: 2rem;
+  background-color: transparent !important;
+}

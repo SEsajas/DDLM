@@ -85,3 +85,9 @@
     color: #000000;
     font-family: "Bungee Inline", cursive;
   }
+  .time{
+    position: absolute;
+    font-size: 2rem;
+    margin-left: 0;
+    background-color: transparent !important;
+  }

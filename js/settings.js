@@ -114,8 +114,7 @@ function getSaved(){
 // exit the room
 function exit(){
   if(answers.length == 3){
-  if (answers.includes(false) || answers.includes(null) || answer.includes("null")){
-
+  if (answers.includes(false) || answers.includes(null)){
   }else{
       location.href = './exit.html';
   }

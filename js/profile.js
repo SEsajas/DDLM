@@ -9,5 +9,5 @@ function getCharacter() {
 const nameText = document.querySelector(".playerName");
 const img = document.querySelector(".charImage");
 
-nameText.textContent = `Hello ${getName() || 'Player'}, This is your character.`;
+nameText.textContent = `Congratulations!! ${getName()}`;
 img.src = getCharacter();

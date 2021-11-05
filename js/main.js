@@ -33,11 +33,16 @@ if (hang_game)
  });   
 }
 
+// Timer
+
+
 const time = document.querySelector(".time");
-let countDown = 600;
+let countDown = localStorage.getItem("time") || localStorage.setItem("time", 600);
 let countDownTimer;
 setTimeout(stopGame, countDown * 1000);
 countDownTimer = setInterval(updateCountDown, 1000);
+time.textContent = countDown;
+
 
 
 // Game Over
@@ -51,22 +56,27 @@ function stopGame(){
 
 function updateCountDown(){
     countDown --;
+    localStorage.setItem("time", countDown)
     console.log(countDown);
     time.textContent = countDown;
 }
 
 
 // To clean local storage to replay the game
-// let buttonReplay = document.querySelectorAll(".replay");
 
-// if (buttonReplay) {
+let buttonReplay = document.querySelectorAll(".replay");
 
-//     buttonReplay.addEventListener("click",()=>{
-//         localStorage.removeItem(`answers`);
-//         localStorage.removeItem(`name`);
-//         localStorage.removeItem(`characher`);
-//     })
-// };
+if (buttonReplay) {
+    console.log(buttonReplay);
+
+    buttonReplay.forEach(element => {
+        element.addEventListener("click",()=>{
+            localStorage.removeItem(`answers`);
+            localStorage.removeItem(`name`);
+            localStorage.removeItem(`characher`);
+        });
+    }); 
+};
 
 
 
